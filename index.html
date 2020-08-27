@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+      <div class="main-content">
+        <div id="side-content" class="side-content">
+            <img src="fans.svg" alt="">
+            <h2>Tic Tac Toe</h2>
+            <p>Everyone is a player when they come to the board not aboard.</p>
+        </div>
+        <div class="form-container">
+            <form id="form">
+                <div id="form-content">
+                    
+                    <div class="floating-placeholder">
+                    <input type="text" id="p1" name="p1" placeholder="1st Player Name :"/>
+                    </div>
+                    
+                    <div class="floating-placeholder">
+                    <input type="text" id="p2" name="p2" placeholder="2nd Player Name :"/>
+                    </div>
+                    
+                    
+                    <div class="floating-placeholder">
+                    <input type="number" id="dimensions" name="dimension" min="3" max="10" placeholder="Dimension"/>
+                    </div>
+                    
+                    </br>
+                </div>
+            </form>
+            <button id="start" class="btn-grad" onclick="startgame()" >Start Game</button>
+        </div>
+    </div>
+    <section id="grid-holder" class="hide">
+        <div id="turn" class="turn"></div>
+        <div  id="grid-container" class="grid">
+        </div>
+        <button id="restart" class="btn-grad hide" onclick="location.href='index.html';">restart</button>
+    </section>
+    
+    
+    
+    <script src="game.js"></script>
+  </body>
+</html>
